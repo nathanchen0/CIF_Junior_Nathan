@@ -1,0 +1,54 @@
+# Format: [High Temp, Low Temp] in celsius for each day of the week
+weather_data = [
+    [9, 3, "sunny"],  # Sunday's data
+    [10, 7, "rain"],  # Mondays's data
+    [12, 6, "partly sunny"],   # Tuesday's data
+    [11, 4, "rain"],  # Wednesday's data
+    [8, 4, "partly sunny"],  # Thursday's data
+    [11, 8, "rain"],  # Friday's data
+    [10, 8, "rain"],   # Saturday's data
+    [7, 2, "partly sunny"],  # Sunday's data
+]
+
+sundayold_weather = weather_data[0]
+monday_weather = weather_data[1]
+tuesday_weather = weather_data[2]
+wednesday_weather = weather_data[3]
+thursday_weather = weather_data[4]
+friday_weather = weather_data[5]
+saturday_weather = weather_data[6]
+sunday_weather = weather_data[7]
+
+day = input("Enter a day of the week: ")
+data_type = input("Enter the type of data you want (high, low, condition): ")
+
+def find_data(day, data_type):
+    if day == "first sunday" or day == "first sun" or day == " First Sunday":
+        day_data = sundayold_weather
+    elif day == "monday" or day == "mon" or day == "Monday":
+        day_data = monday_weather
+    elif day == "tuesday" or day == "tues" or day == "Tuesday":
+        day_data = tuesday_weather
+    elif day == "wednesday" or day == "wed" or day == "Wednesday":
+        day_data = wednesday_weather
+    elif day == "thursday" or day == "thurs" or day == "Thursday":
+        day_data = thursday_weather
+    elif day == "friday" or day == "fri" or day == "Friday":
+        day_data = friday_weather
+    elif day == "saturday" or day == "sat" or day == "Saturday":
+        day_data = saturday_weather
+    elif day == "sunday" or day == "sun" or day == "Sunday":
+        day_data = sunday_weather
+
+        
+    if data_type == "high":
+        return day_data[0]
+    elif data_type == "low":
+        return day_data[1]
+    elif data_type == "condition":
+        return day_data[2]
+    else:
+        return "Invalid day"
+    
+result = find_data(day, data_type)
+print(result)
