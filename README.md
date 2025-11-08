@@ -29,3 +29,5 @@ I made a weather database that allows people to find the low, high and the condi
 We started our first TBAG! This uses questions of some sort to make an adventure game.
 
 Mine is called "The Adventure of 0s and 1s" and it is a code related game with questions that the user will have to answer.
+
+When I print the instructions, I use my own function called setup() which allows me to print it whenever I want to without another chunk of text.
