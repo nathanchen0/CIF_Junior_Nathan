@@ -28,4 +28,4 @@ I made a weather database that allows people to find the low, high and the condi
 # Starting up a TBAG (Text Based Adventure Game)
 We started our first TBAG! This uses questions of some sort to make an adventure game.
 
-Mine is called "The Adventure of 0s and 1s" and it is a code related game with questions that the user will have to anwer.
+Mine is called "The Adventure of 0s and 1s" and it is a code related game with questions that the user will have to answer.
