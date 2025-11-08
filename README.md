@@ -17,3 +17,15 @@ This is the entire work from Nathan for CIF Junior 2025
 2. Add a Python Compiler and Debugger
 3. Optional but very useful, Take Free Lesson at CIF to learn more about python!
 4. Have Fun!
+
+
+# Week 4
+## 2D lists!
+1. We learned about how 2D lists work
+
+I made a weather database that allows people to find the low, high and the conditions of a day using 2D lists. Check weather in week 4 to see the code.
+
+# Starting up a TBAG (Text Based Adventure Game)
+We started our first TBAG! This uses questions of some sort to make an adventure game.
+
+Mine is called "The Adventure of 0s and 1s" and it is a code related game with questions that the user will have to anwer.
