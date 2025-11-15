@@ -31,3 +31,14 @@ We started our first TBAG! This uses questions of some sort to make an adventure
 Mine is called "The Adventure of 0s and 1s" and it is a code related game with questions that the user will have to answer.
 
 When I print the instructions, I use my own function called setup() which allows me to print it whenever I want to without another chunk of text.
+
+# Week 5
+Now that we had our plan out, we got our next class learning about how to make our TBAGs more fun!
+1. Using 2D lists, we stored our questions and answers (This makes our code more simple and easy to access)
+2. We added function to check answers from the user so that the game is more interactive
+3. We also added a list to make sure that no question are repeated
+4. I used the randint function and another list to choose questions
+
+Go to week5, tbag2.py to see my game code.
+
+
