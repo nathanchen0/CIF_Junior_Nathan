@@ -41,4 +41,16 @@ Now that we had our plan out, we got our next class learning about how to make o
 
 Go to week5, tbag2.py to see my game code.
 
+# Week 6
 
+For class 6, we learned about turtle (my favourite)!
+We learned about the general command like turtle.forward() and how to move the turtle. Here are some other things we learned:
+
+1. turtle.penup() and turtle.pendown() - lifts the pen or puts the pen down
+2. turtle.shape(), turtle.color() - the turtle customization
+3. turtle.begin_fill(), turtle.end_fill() - fill blocks of drawings
+
+We drew fireworks, a starting project for doing turtle. We drew the first part of the firework, the box and the rising explosion line.
+<img width="800" height="711" alt="Screenshot 2025-11-21 at 9 42 07 PM" src="https://github.com/user-attachments/assets/61877a61-3c39-4abf-b41b-c85a337de20d" />
+
+All of the week 6 code on turtle and fireworks are in the week6 folder
