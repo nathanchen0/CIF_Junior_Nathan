@@ -11,3 +11,5 @@ angle = (sides-2)*180/sides
 for i in range(sides):
     turtle.forward(length)
     turtle.left(180 - angle)
+
+turtle.done()
