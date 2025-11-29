@@ -54,3 +54,14 @@ We drew fireworks, a starting project for doing turtle. We drew the first part o
 <img width="800" height="711" alt="Screenshot 2025-11-21 at 9 42 07 PM" src="https://github.com/user-attachments/assets/61877a61-3c39-4abf-b41b-c85a337de20d" />
 
 All of the week 6 code on turtle and fireworks are in the week6 folder
+
+# Week 7
+Continuing off of our last weeks work, we learned about advanced turtle functions.
+
+For example, we learned about:
+1. Cloning turtle with turtle.clone()
+2. Advanced loops and loops in loops
+3. Changing turtle delay and speed
+
+Using these skills, we made an advanced firework drawing. Check mine out in the week7 folder.
+<img width="874" height="753" alt="image" src="https://github.com/user-attachments/assets/c1b34db6-31dc-4f79-badb-2ae0197992b5" />
