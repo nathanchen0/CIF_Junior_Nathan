@@ -65,3 +65,9 @@ For example, we learned about:
 
 Using these skills, we made an advanced firework drawing. Check mine out in the week7 folder.
 <img width="874" height="753" alt="image" src="https://github.com/user-attachments/assets/c1b34db6-31dc-4f79-badb-2ae0197992b5" />
+
+We also created a fancy shape! We used a lot of repeatedly drew a shape and turned to make a cool pattern.
+
+Mine is like a wormhole and is a winding circle. My code is all in the week7 folder.
+<img width="834" height="730" alt="image" src="https://github.com/user-attachments/assets/0af48045-b29c-49a7-9c51-71cb2ea47778" />
+
