@@ -18,6 +18,26 @@ for i in range(2):
     turtle.forward(100)
     turtle.right(90)
 turtle.end_fill()
+turtle.penup()
+
+#human figure
+turtle.color("white")
+turtle.goto(200, -215)
+turtle.pendown()
+turtle.circle(15)
+turtle.seth(-90)
+turtle.forward(20)
+turtle.right(30)
+turtle.forward(15)
+turtle.goto(200, -235)
+turtle.seth(-90)
+turtle.left(30)
+turtle.forward(15)
+turtle.penup()
+turtle.goto(185, -230)
+turtle.seth(0)
+turtle.pendown()
+turtle.forward(30)
 
 turtle.penup()
 turtle.goto(100, -250)
@@ -62,7 +82,6 @@ for i in range(18):
     #trtls[i].color("black")
     trtls[i].shapesize(0.1)
     trtls[i].pencolor(color[i % len(color)])
-    print(i)
 
 for j in range(50):
     for i in range(18):
