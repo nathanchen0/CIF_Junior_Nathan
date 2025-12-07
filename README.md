@@ -72,15 +72,23 @@ Mine is like a wormhole and is a winding circle. My code is all in the week7 fol
 <img width="834" height="730" alt="image" src="https://github.com/user-attachments/assets/0af48045-b29c-49a7-9c51-71cb2ea47778" />
 # Week 8
 For week 8, we learned about pygame. For the first homework, we brainstormed how to do simple things in pygame.
+
 Moving a box
+
 First way
+
 1. Draw a box on the screen
 2. Move each point of the box to the right to move it
+
 Second way
+
 1. Draw a box on the screen
 2. Remove it and draw another one slightly to the right quickly
+
 Homework two: brainstorm some ideas for the game
-My first idea is tetris
+
+My idea is tetris
+
 I can use:
 1. Randint to choose random blocks
 2. Use some kind of moving box to move the shape down
