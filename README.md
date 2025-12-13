@@ -95,3 +95,10 @@ I can use:
 3. Allow some kind of control of the blocks from the player
 4. Decide when the game is lost
 
+
+# Week 9
+Now we learned one of the most important skills of Pygame: moving a box.
+
+By very quickly flashing a square that is to the direction of the original box, it looks like the box is moving.
+
+We tried to make a green box and a purple box move in opposite directions as practice. My code can be found in the week9 folder.
