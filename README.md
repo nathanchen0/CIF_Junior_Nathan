@@ -102,3 +102,37 @@ Now we learned one of the most important skills of Pygame: moving a box.
 By very quickly flashing a square that is to the direction of the original box, it looks like the box is moving.
 
 We tried to make a green box and a purple box move in opposite directions as practice. My code can be found in the week9 folder.
+
+# Week 10 (Right before Christmas Break) yay :)
+To finish off 2025, we made another improvement to our box movement. Firstly, we made our movement smoother and added a boundary to the box.
+
+By adding the position of the box with the box dimensions and checking if it is larger than the screen, we can add a boundary to the box.
+
+    if box_x + boxwidth > width:
+        box_x = width - boxwidth
+    if box_x < 0:
+        box_x = 0
+    if box_y + boxheight > height:
+        box_y = height - boxheight
+    if box_y < 0:
+        box_y = 0
+
+We also added a system to allow for diagonal movement and a transition to horizontal or vertical movement.
+1. We add an event check to see if the user has lifted up W, A, S, or D
+2. We check if the user lifted A or D (If so, we set the x movement to 0)
+3. We check if the user lifted W or S (If so, we set the y movement to 0)
+
+elif event.type == pygame.KEYUP:
+    if event.key == pygame.K_d or event.key == pygame.K_a:
+        box_x_change = 0
+    if event.key == pygame.K_w or event.key == pygame.K_s:
+        box_y_change = 0
+
+We also did an optional challenge of changing colour every 2 seconds as a decoration.
+colour_change_event = pygame.USEREVENT + 1
+pygame.time.set_timer(colour_change_event, 2000)  # Change colour every 2 seconds
+
+                            .....
+
+elif event.type == colour_change_event:
+    box_colour = random.choice(colour_list)
