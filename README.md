@@ -103,7 +103,7 @@ By very quickly flashing a square that is to the direction of the original box, 
 
 We tried to make a green box and a purple box move in opposite directions as practice. My code can be found in the week9 folder.
 
-# Week 10 (Right before Christmas Break) yay :)
+# Week 10
 To finish off 2025, we made another improvement to our box movement. Firstly, we made our movement smoother and added a boundary to the box.
 
 By adding the position of the box with the box dimensions and checking if it is larger than the screen, we can add a boundary to the box.
@@ -123,16 +123,38 @@ We also added a system to allow for diagonal movement and a transition to horizo
 3. We check if the user lifted W or S (If so, we set the y movement to 0)
 
 elif event.type == pygame.KEYUP:
+
     if event.key == pygame.K_d or event.key == pygame.K_a:
+    
         box_x_change = 0
+        
     if event.key == pygame.K_w or event.key == pygame.K_s:
+    
         box_y_change = 0
 
 We also did an optional challenge of changing colour every 2 seconds as a decoration.
 colour_change_event = pygame.USEREVENT + 1
+
 pygame.time.set_timer(colour_change_event, 2000)  # Change colour every 2 seconds
 
                             .....
 
 elif event.type == colour_change_event:
     box_colour = random.choice(colour_list)
+
+# Week 11 (Right before Christmas yay!)
+
+We learned about the collision detecting feature in pygame using colliderect.
+
+if rect1.colliderect(rect2):
+
+    print("Collision detected!")
+
+We also made a little game with this new function. When the box collides, it prints "collision detected" and the box changes colour.
+
+<img width="790" height="806" alt="image" src="https://github.com/user-attachments/assets/2cbb0eab-7015-4b32-a1a3-8641c7420cad" />
+
+
+<img width="790" height="814" alt="image" src="https://github.com/user-attachments/assets/840a33cb-3a75-4b72-9694-7dde5b39e80d" />
+
+
