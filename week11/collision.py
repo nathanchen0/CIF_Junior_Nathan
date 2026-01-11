@@ -1,6 +1,7 @@
 import pygame
 pygame.init()
 
+
 #set a bunch of random colours
 red = (255, 0, 0)
 black = (0, 0, 0)
@@ -72,16 +73,16 @@ while playing:
     rect2 = pygame.Rect(box_x2, box_y2, boxwidth, boxheight)
     # check for collision and make sure the boxes do not overlap
     if rect1.colliderect(rect2):
-        print("Collision detected!")
+        textsurface = myfont.render('Collision detected!', False, (255, 255, 255))
+        screen.blit(textsurface, (0, 750))
         box2_colour = blue
         box_x = box_x - box_x_change
         box_y = box_y - box_y_change
     #change the colour of box2 back to green if no collision
     else:
         box2_colour = green
-    pygame.draw.rect(screen, box_colour, rect1)
     pygame.draw.rect(screen, box2_colour, rect2)
-
+    pygame.draw.rect(screen, box_colour, rect1)
     textsurface = myfont.render('Hit the box!', False, (255, 255, 255))
     screen.blit(textsurface, (335, 0))
 
