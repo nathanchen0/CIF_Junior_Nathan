@@ -157,4 +157,20 @@ We also made a little game with this new function. When the box collides, it pri
 
 <img width="790" height="814" alt="image" src="https://github.com/user-attachments/assets/840a33cb-3a75-4b72-9694-7dde5b39e80d" />
 
+# Week 12
 
+In week 12, we started to make our first pygame! 
+
+I wanted to make a real maze that requires the player to carefully not touch the barriers and make their way to the end.
+
+In order to make mazes, I used numbers that each represented a part of the maze. (a 1 is a wall, 0 is a space, 3 is the player, and 2 is the finish)
+
+Credits to https://electronstudio.github.io/pygame-zero-book/chapters/maze.html for the idea! Thank You!
+
+1. With these long string of numbers, I can use the len() function to find out what each number is and find their location.
+2. I then do the smae old program with the moving box
+3. I also make sure that if the box contacts the finish line, it is a win
+4. And add a line that if the player touches the walls, they lose
+<img width="805" height="822" alt="image" src="https://github.com/user-attachments/assets/c038103d-e5ff-4fca-90b4-8955d273a135" />
+
+Check my week12 folder for the code!
