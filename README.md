@@ -163,7 +163,8 @@ In week 12, we started to make our first pygame!
 
 I wanted to make a real maze that requires the player to carefully not touch the barriers and make their way to the end.
 
-In order to make mazes, I used numbers that each represented a part of the maze. (a 1 is a wall, 0 is a space, 3 is the player, and 2 is the finish)
+In order to make mazes, I used numbers that each represented a part of the maze. (a 1 is a wall, 0 is a space, 4 is the coin, 3 is the player, and 2 is the finish)
+
 
 Credits to https://electronstudio.github.io/pygame-zero-book/chapters/maze.html for the idea! Thank You!
 
@@ -172,5 +173,10 @@ Credits to https://electronstudio.github.io/pygame-zero-book/chapters/maze.html 
 3. I also make sure that if the box contacts the finish line, it is a win
 4. And add a line that if the player touches the walls, they lose
 <img width="805" height="822" alt="image" src="https://github.com/user-attachments/assets/c038103d-e5ff-4fca-90b4-8955d273a135" />
+
+For coins, I used a smaller box that when collected, disappears. In order to beat the new game, you have to collect all coins. I also made a version where when the player touches the wall, they go back to the start instead of dying.
+
+<img width="1600" height="1646" alt="image" src="https://github.com/user-attachments/assets/553bb760-6d05-473a-91fb-3a3755ed5aaf" />
+
 
 Check my week12 folder for the code!
