@@ -144,7 +144,7 @@ def draw():
                 pygame.draw.rect(screen, red, (col * tilesize, row * tilesize, tilesize, tilesize))
             elif tile == 4: #coin
                 #have the coin centered in the tile
-                pygame.draw.rect(screen, yellow, (col * tilesize + (tilesize - coinsize) // 2, row * tilesize + (tilesize - coinsize) // 2, coinsize, coinsize))
+                pygame.draw.circle(screen, yellow, (col * tilesize + (28), row * tilesize + (30)), coinsize // 2)
                 global coin_pos
                 coin_pos = pygame.Rect(col * tilesize + (tilesize - coinsize) // 2, row * tilesize + (tilesize - coinsize) // 2, coinsize, coinsize)
                 #remeber this position for coin detection
@@ -196,6 +196,8 @@ while playing:
     # drawing the player box
     rect1 = pygame.Rect(box_x, box_y, boxwidth, boxheight)
     pygame.draw.rect(screen, box_colour, rect1)
+    #display elapsed time once per second
+    runtime = pygame.time.get_ticks() // 1000 - 3
     #make it so the player cannot go through walls
     for wall in mazeboxlist:
         if rect1.colliderect(pygame.Rect(wall[0] * tilesize, wall[1] * tilesize, tilesize, tilesize)):
@@ -211,8 +213,12 @@ while playing:
     #check for reaching the goal and having all coins collected
     if rect1.colliderect(goal_pos):
         if coincount == collected:
-            textsurface = myfont.render('You Win!', False, (255, 255, 255))
-            screen.blit(textsurface, (350, 400))
+            print("You win! Time:", runtime, "seconds")
+            textsurface = myfont.render('You Win! Time: ' + str(runtime) + 's', False, (255, 255, 255))
+            screen.blit(textsurface, (200, 400))
+            runtime = "none"
+            pygame.display.update()
+            pygame.time.delay(3000)
             playing = False
         else:
             textsurface = myfont.render('Collect all coins first!', False, (255, 255, 255))
