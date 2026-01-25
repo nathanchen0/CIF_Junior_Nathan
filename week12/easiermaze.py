@@ -145,7 +145,7 @@ def draw():
                 pygame.draw.rect(screen, red, (col * tilesize, row * tilesize, tilesize, tilesize))
             elif tile == 4: #coin
                 #have the coin centered in the tile
-                pygame.draw.rect(screen, yellow, (col * tilesize + (tilesize - coinsize) // 2, row * tilesize + (tilesize - coinsize) // 2, coinsize, coinsize))
+                pygame.draw.circle(screen, yellow, (col * tilesize + (28), row * tilesize + (30)), coinsize // 2)
                 global coin_pos
                 coin_pos = pygame.Rect(col * tilesize + (tilesize - coinsize) // 2, row * tilesize + (tilesize - coinsize) // 2, coinsize, coinsize)
                 #remeber this position for coin detection
