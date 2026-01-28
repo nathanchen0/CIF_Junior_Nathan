@@ -1,3 +1,4 @@
+#no death version of maze game
 import pygame
 import random
 pygame.init()
@@ -144,7 +145,7 @@ def draw():
                 pygame.draw.rect(screen, red, (col * tilesize, row * tilesize, tilesize, tilesize))
             elif tile == 4: #coin
                 #have the coin centered in the tile
-                pygame.draw.rect(screen, yellow, (col * tilesize + (tilesize - coinsize) // 2, row * tilesize + (tilesize - coinsize) // 2, coinsize, coinsize))
+                pygame.draw.circle(screen, yellow, (col * tilesize + (30), row * tilesize + (30)), coinsize // 2)
                 global coin_pos
                 coin_pos = pygame.Rect(col * tilesize + (tilesize - coinsize) // 2, row * tilesize + (tilesize - coinsize) // 2, coinsize, coinsize)
                 #remeber this position for coin detection
@@ -198,10 +199,11 @@ while playing:
     pygame.draw.rect(screen, box_colour, rect1)
     #display elapsed time once per second
     runtime = pygame.time.get_ticks() // 1000 - 3
-    #make it so the player cannot go through walls
+    #make it so the player cannot go through walls but does not die
     for wall in mazeboxlist:
         if rect1.colliderect(pygame.Rect(wall[0] * tilesize, wall[1] * tilesize, tilesize, tilesize)):
-            playing = False
+            box_x = 0
+            box_y = 0
     #check for collecting coins and make them disappear and add to collected count
     for coin in coinlist:
         if rect1.colliderect(coin):
