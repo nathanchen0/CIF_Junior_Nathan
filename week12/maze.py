@@ -199,6 +199,8 @@ while playing:
     pygame.draw.rect(screen, box_colour, rect1)
     #display elapsed time once per second
     runtime = pygame.time.get_ticks() // 1000 - 3
+    timedisplay = myfont.render('Time: ' + str(runtime) + 's', False, (255, 255, 255))
+    screen.blit(timedisplay, (600, 10))
     #make it so the player cannot go through walls but does not die
     for wall in mazeboxlist:
         if rect1.colliderect(pygame.Rect(wall[0] * tilesize, wall[1] * tilesize, tilesize, tilesize)):
